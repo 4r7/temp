@@ -1,0 +1,88 @@
+@font-face {
+    font-family: CircularStd;
+    src: url(../fonts/CircularStd/CircularStd-Regular.woff);
+  }
+
+  body {
+	overflow: hidden;
+  }
+
+  .osano-root {
+      font-family: CircularStd, Helvetica, sans-serif;
+      line-height: 1.375;
+      color: rgba(50, 50, 50);
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0;
+  }
+
+  .osano-field {
+      margin: 0 0 1.5rem;
+  }
+
+  .osano-fieldset {
+      border-radius: 12px;
+  }
+
+  .osano-fieldset, .osano-input--type_checkbox+.osano-label::before {
+      border-color: rgb(204, 204, 204);
+  }
+
+  .osano-form {
+      padding: 1.25rem 1.5rem;
+  }
+
+  .osano-input, .osano-label {
+      color: rgb(50,50,50);
+  }
+
+  .osano-button {
+      margin-bottom: 1.5rem;
+      border-radius: 43px;
+      border-width: 2px;
+      min-width: 0px;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 16px;
+      text-transform: none;
+      display: inline-flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-style: solid;
+      line-height: 1;
+      text-decoration-line: none;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(.4,0,.2,1);
+      transition-duration: .3s;
+      transition-timing-function: cubic-bezier(0,0,.2,1);
+  }
+
+  .osano-form select {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"><path stroke="%236b7280" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 8l4 4 4-4"/></svg>');
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5rem 1.5rem;
+  }
+
+  /* For IE */
+  .osano-form select::-ms-expand {
+    display: none;
+  }
+
+  .osano-field--type_select .osano-field__fieldset:after {
+      content: "";
+  }
+
+  .osano-helper-text {
+      font-size: 18px;
+      font-weight: 400;
+      color: rgb(50, 50, 50);
+  }
+
+  .osano-fieldset:hover {
+      border-color: rgba(12, 108, 222);
+  }
